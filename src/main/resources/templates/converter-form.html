@@ -6,7 +6,7 @@
 </head>
 <body>
 <form th:object="${form}" th:method="post">
-    <!-- th:field는 Converter가 자동으로 적용됨!! -->
+    <!-- th:field는 Converter가 자동으로 적용됨!! (IpPort가 String으로 변환됨) -->
     th:field <input type="text" th:field="*{ipPort}"><br/>
 
     <!-- th:value는 Converter가 자동으로 적용안됨 -->
